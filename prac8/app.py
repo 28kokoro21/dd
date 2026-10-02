@@ -26,20 +26,20 @@ if __name__ == "__main__":
 
 
 
-# ```yaml
-# global:
-#   scrape_interval: 5s
+# yaml
+global:
+  scrape_interval: 5s
 
-# scrape_configs:
-#   - job_name: "prometheus"
-#     static_configs:
-#       - targets: ["localhost:9090"]
+scrape_configs:
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]
 
-#   - job_name: "python-app"
-#     static_configs:
-#       - targets: ["localhost:8000"]
+  - job_name: "python-app"
+    static_configs:
+      - targets: ["localhost:8000"]
 
-#   - job_name: "windows"
-#     static_configs:
-#       - targets: ["localhost:9182"]
-# ```
+  - job_name: "windows"
+    static_configs:
+      - targets: ["localhost:9182"]
+
